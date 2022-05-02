@@ -1,0 +1,181 @@
+<html lang="en">
+<head>
+    <title>Maternity information</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
+</head>
+<body>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <label for="IPDNo" class="form-label">IPD Number</label>
+                <obs id="166533" conceptId="166533"/>
+            </div>
+            <div class="col">
+                <label for="admissionTime">Date/time of admission</label>
+                <obs id="" conceptId=""/>
+            </div>
+            <div class="col">
+                <label for="APGARScore" class="form-label">APGAR score</label>
+                <obs id="99326" conceptId="99326"/>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <label for="gravida" class="form-label">Gravida</label>
+                <obs id="5624" conceptId="5624"/>
+            </div>
+            <div class="col">
+                <label for="AdmissionNo" class="form-label">Admission Number</label>
+                <obs id="166530" conceptId="166530"/>
+            </div>
+            <div class="col">
+                <label for="gender" class="form-label">Gender</label>
+                <obs id="90252" conceptId="90252" answerConceptIds="90164,90165"
+                     answerLabels="1 - Female, 2 - Male"/>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <label for="parity" class="form-label">Parity</label>
+                <obs id="1053" conceptId="1053"/>
+            </div>
+            <div class="col">
+                <label for="syphilisTest" class="form-label">Syphilis Test</label>
+                <obs id="299" conceptId="299" answerConceptIds="99754,99755,99756,99757"
+                answerLabels="Rx - Client tested and results given-client  reactive  and  given
+                treatment, +Ve - Client  tested positive  but not yet given treatment,
+                NR - Client  tested results  given-client non-reactive,
+                NT - Client not  tested for  syphilis"/>
+            </div>
+            <div class="col">
+                <label for="weight" class="form-label"> Weight </label>
+                <obs id="5916" conceptId="5916"/>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <label for="gestationAge" class="form-label">Gestation Age</label>
+                <obs id="1279" conceptId="1279"/>
+            </div>
+            <div class="col">
+                <label for="HIVTest" class="form-label">HIV Test</label>
+                <obs id="99630" conceptId="99630" answerConceptIds=""
+                     answerLabels="Rx - Tested; reactive; given treatment,
+                     +Ve - Tested positive, not treated, NR - Tested, non-reactive,
+                     NT - Not  tested"/>
+            </div>
+            <div class="col">
+                <label for="riskStatus" class="form-label">Risk status</label>
+                <obs id="" conceptId="" answerConceptIds="1408,165381"
+                answerLabels="1 - High, 2 - Low"/>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <label for="deliveryTerm" class="form-label">Delivery Term</label>
+                <obs id="" conceptId="" answerConceptIds="162930,162931"
+                     answerLabels="1 - Term, 2 - Pre-term"/>
+            </div>
+            <div class="col">
+                <label for="deliveryMode" class="form-label">Mode of  delivery</label>
+                <obs id="5630" conceptId="5630" answerConceptIds="1170, 163005, 1171"
+                     answerLabels="1 - Normal viginal, 2 - Vaccum extraction, 3 - Caesarean section"/>
+            </div>
+            <div class="col">
+                <label for="testingAndTreatment" class="form-label">Testing and Treatment</label>
+                <obs id="" conceptId="" answerConceptIds="90003,90004"
+                      answerLabels="1 - Yes, 2- No"/>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <label for="admissionReason" class="form-label">Reason for Admission</label>
+                <obs id="166532" conceptId="166532" answerConceptIds="145,899,160151,55,129211,905"
+                     answerLabels="1 - Labour pain, 2 - False labour, 3 - Malaria in pregnancy,
+                     4 - UTI, 5 - Early rupture of membranes, 6 - Incomplete abortion"/>
+            </div>
+            <div class="col">
+                <label for="deliveryTime">Delivery date and time</label>
+                <input type="datetime-local" id="deliverytime" name="Delivery Time"/>
+            </div>
+            <div class="col">
+                <label for="babyTreatment" class="form-label">Treatment given to the  baby</label>
+                <obs id="165440" conceptId="165440"/>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <label for="EMTCT-SCODE" class="form-label">EMTCT-S CODE</label>
+                <obs id="166559" conceptId="166559" answerConceptIds="166555,166553,166554"
+                answerLabels="1 - Newly  identified  to be  treated  and  receive counselling,
+                2 - Already  known syphilis positive received treatment,
+                3 - Already known syphilis positive not yet on treatment"/>
+            </div>
+            <div class="col">
+                <label for="referredFacility" class="form-label">Referred Facility</label>
+                <obs id="" conceptId=""/>
+            </div>
+            <div class="col">
+                <label for="finalDiagnosis" class="form-label">Final diagnosis</label>
+                <obs id="" conceptId="" answerConceptIds="125872,159908,166543,166544,166545,166546,165440"
+                      answerLabels="1 - Still birth, 2 - Prematurity, 3 - Small stature for gestational age
+                      4 - None immune hydrops, 5 - Congenital anemia, 6 - Snuffles, 7 - None"/>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <label for="remarks" class="form-label">Remarks</label>
+                <obs id="" conceptId=""/>
+            </div>
+            <div class="col">
+                <label for="dischargecounselling" class="form-label">Counselling at discharge</label>
+                <obs id="162938" conceptId="162938" answerConceptIds="162936,162937"
+                     answerLabels="1-C, 2-NC"/>
+            </div>
+            <div class="col">
+                <label for="babyCondition" class="form-label">Baby condition on discharge</label>
+                <obs id="99334" conceptId="99334" answerConceptIds="135436,162953,99332,99333,165448"
+                     answerLabels="1 - Macerated still  birth, 2 - Fresh still  birth,
+                     3 - Immediate neonatal death, 4- live  baby, 5 - Live baby referred to  another unit"/>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <button type="button" class="btn btn-secondary btn-lg">Submit</button>
+            </div>
+            <div class="col">
+                <button type="button" class="btn btn-secondary btn-lg">Add another baby</button>
+            </div>
+            <div class="col">
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

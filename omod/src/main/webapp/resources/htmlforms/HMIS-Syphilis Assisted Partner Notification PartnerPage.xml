@@ -1,0 +1,158 @@
+<htmlform formName="Patient Partner"
+          formDescription=""
+          formUuid="a11-db11-405f-9cf5-8479cd311b41">
+<head>
+    <title>
+        Partner Information
+    </title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
+</head>
+<body>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <label for="Partner Name" class="form-label">Partner's name</label>
+                <obs id="166539" conceptId="166539"/>
+            </div>
+            <div class="col">
+                <label for="district" class="form-label">District</label>
+                <obs id="165853" conceptId="165853"/>
+            </div>
+            <div class="col">
+                <label for="Syphilis testing" class="form-label">Syphilis testing</label>
+                <obs id="166548" conceptId="166548"/>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <label for="commonName" class="form-label">Common Name</label>
+                <obs id="166541" conceptId="166541"/>
+            </div>
+            <div class="col">
+                <label for="subCounty" class="form-label">Sub-County</label>
+                <obs id="99135" conceptId="99135"/>
+            </div>
+            <div class="col">
+                <label for="DateTested" class="form-label">Date Tested</label>
+                <obs id="" conceptId=""/>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <label for="age" class="form-label">Age in years</label>
+                <obs id="166540" conceptId="166540"/>
+            </div>
+            <div class="col">
+                <label for="parish" class="form-label">Parish</label>
+                <obs id="99136" conceptId="99136"/>
+            </div>
+            <div class="col">
+                <label for="final test results" class="form-label">Final test result</label>
+                <obs id="" conceptId="" answerConceptIds="99755, 99756"
+                     answerLabels="1 - Positive, 2 - Negative"/>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <label for="gender" class="form-label">Gender</label>
+                <obs id="90252" conceptId="90252" answerConceptIds="90164,90165"
+                     answerLabels="1 - Female, 2 - Male"/>
+            </div>
+            <div class="col">
+                <label for="village" class="form-label">Village</label>
+                <obs id="99137" conceptId="99137"/>
+            <div class="col">
+                <label for="Syphilis positive" class="form-label">If syphilis positive</label>
+                <obs id="166557" conceptId="166557" answerConceptIds="166556,166553,166554"
+                     answerLabels="1 - Newly identified to be  treated and receive couple
+                     counselling, 2 - Already known syphilis positive received treatment,
+                     3 - Already  known syphilis positive not  yet on  treatment"/>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <label for="Telephone" class="form-label">Telephone</label>
+                <obs id="90266" conceptId="90266"/>
+            </div>
+            <div class="col">
+                <label for="prominentFeature" class="form-label">Prominent Feature</label>
+                <obs id="166542" conceptId="166542"/>
+            </div>
+            <div class="col">
+                <label for="Syphilis negative" class="form-label">If negative, linked to</label>
+                <obs id="166558" conceptId="166558" answerConceptIds="99367,99296,166533"
+                     answerLabels="1 - Couple counselling, 2 - Condom  use, 3 - VMMC, 4 - Others"/>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <label for="Notification Means" class="form-label">Notification Means</label>
+                <obs id="" conceptId="" answerConceptIds=""
+                     answerLabels="1 - Phone, 2 - ANC visit"/>
+            </div>
+            <div class="col">
+                <label for="Case closure status" class="form-label">Case closure status</label>
+                <obs id="" conceptId="" answerConceptIds="166549,166550"
+                     answerLabels="6 - partner is  unwilling to come, 7 - Partner has  opted to test else where"/>
+            </div>
+            <div class="col">
+                <label for="othersLinkedTo" class="form-label">Others</label>
+                <obs id="" conceptId=""/>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <label for="Notification Outcome" class="form-label">Notification Outcome</label>
+                <obs id="" conceptId="" answerConceptIds=""
+                     answerLabels="1 - Came for syphilis test, 2 - Will test elsewhere, 3 - Refused test,
+                     4 - Already known Syphilis positive, 5 - Completed Syphilis treatment"/>
+            </div>
+            <div class="col">
+                <label for="others case closure status" class="form-label">Others Specify</label>
+                <obs id="" conceptId=""/>
+            </div>
+            <div class="col">
+                <label for="remarks" class="form-label">Remarks</label>
+                <obs id="" conceptId=""/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <button type="button" class="btn btn-secondary btn-lg">Submit</button>
+            </div>
+            <div class="col">
+                <button type="button" class="btn btn-secondary btn-lg">Add another partner details</button>
+            </div>
+            <div class="col">
+
+            </div>
+        </div>
+    </div>
+</body>
+</htmlform>
