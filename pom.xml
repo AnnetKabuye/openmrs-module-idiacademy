@@ -45,6 +45,12 @@
 				<version>${ugandaemrVersion}</version>
 				<scope>provided</scope>
 			</dependency>
+			<dependency>
+				<groupId>org.openmrs.module</groupId>
+				<artifactId>metadatadeploy-api</artifactId>
+				<version>${metadatadeployVersion}</version>
+				<scope>provided</scope>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
 
@@ -75,5 +81,6 @@
 	<properties>
 		<openmrsPlatformVersion>1.11.6</openmrsPlatformVersion>
 		<ugandaemrVersion>3.3.7</ugandaemrVersion>
+		<metadatadeployVersion>1.10.0</metadatadeployVersion>
 	</properties>
 </project>

@@ -11,10 +11,14 @@ package org.openmrs.module.idiacademy;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+import org.openmrs.api.context.Context;
 import org.openmrs.module.BaseModuleActivator;
 import org.openmrs.module.idiacademy.activator.HtmlFormsInitializer;
 import org.openmrs.module.idiacademy.activator.Initializer;
+import org.openmrs.module.idiacademy.api.IdiAcademyMetaDataBundle;
+import org.openmrs.module.metadatadeploy.api.MetadataDeployService;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -29,7 +33,20 @@ public class IDIAcademyActivator extends BaseModuleActivator {
 	 * @see #started()
 	 */
 	public void started() {
+		
+		log.info("Deploying Metadata");
+		MetadataDeployService metadataDeployService = Context.getService(MetadataDeployService.class);
+		metadataDeployService.installBundle(Context.getRegisteredComponents(IdiAcademyMetaDataBundle.class).get(0));
 		log.info("Started IDI Academy");
+		
+		for (org.openmrs.module.idiacademy.activator.Initializer initializer : getInitializers()) {
+			try {
+				initializer.started();
+			}
+			catch (IOException e) {
+				log.error(e);
+			}
+		}
 	}
 	
 	/**
